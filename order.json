@@ -1,0 +1,71 @@
+[
+  {
+    "order": 1,
+    "items": [
+      {
+        "item": "ristretto",
+        "add": [
+          "ristretto"
+        ]
+      },
+      {
+        "item": "espresso",
+        "add": [
+          "milk"
+        ]
+      },
+      {
+        "item": "lungo",
+        "add": [
+          "milk",
+          "milk"
+        ]
+      },
+      {
+        "item": "tea",
+        "add": []
+      },
+      {
+        "item": "tea",
+        "add": [
+          "milk"
+        ]
+      }
+    ]
+  },
+  {
+    "order": 2,
+    "items": [
+      {
+        "item": "lungo",
+        "add": [
+          "milk",
+          "milk"
+        ]
+      },
+      {
+        "item": "hotmilk",
+        "add": [
+          "ristretto"
+        ]
+      },
+      {
+        "item": "espresso",
+        "add": []
+      },
+      {
+        "item": "espresso",
+        "add": []
+      }
+    ]
+  },
+  {
+    "order": 3,
+    "items": [
+      {
+        "item": "tea",
+        "add": []
+      }
+    ]
+  }
+]

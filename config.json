@@ -1,0 +1,36 @@
+{
+  "coffee_machines_spec": {
+    "water": 1000,
+    "coffee": 55,
+    "milk": 500
+  },
+  "beverage_spec": {
+    "ristretto": {
+      "water": 22,
+      "coffee": 9,
+      "etc": 1
+    },
+    "espresso": {
+      "water": 35,
+      "coffee": 9,
+      "etc": 1
+    },
+    "lungo": {
+      "water": 70,
+      "coffee": 9,
+      "etc": 2
+    },
+    "tea": {
+      "water": 250,
+      "etc": 2
+    },
+    "hotmilk": {
+      "milk": 250,
+      "etc": 2
+    },
+    "milk": {
+      "milk": 20,
+      "etc": 0.5
+    }
+  }
+}
