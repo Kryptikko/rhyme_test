@@ -35,6 +35,7 @@ def allocate_beverage_to_machines(beverage, machine_pool):
             machine = _allocate_to_machine(beverage, machine)
             beverage.allocated_to_machine = machine.id
             machine_pool[machine_id] = machine
+            return beverage
     return beverage
 
 
