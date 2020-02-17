@@ -4,7 +4,7 @@ from entities.Order import Order
 from entities.Beverage import Beverage, UNALLOCATED
 
 
-def init_orders(orders, beverage_spec):
+def init_orders(orders, beverage_spec={}):
     order_instance_set = []
     for order in orders:
         order_instance = Order(order)
