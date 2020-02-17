@@ -5,3 +5,8 @@ source env/bin/active
 pip install -r requirments.txt
 python ./main.py <machine_count> <order_json_file>
 ```
+
+example:
+```bash
+python ./main.py 1 ./order.json
+```
