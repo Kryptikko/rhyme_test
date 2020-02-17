@@ -8,5 +8,7 @@ python ./main.py <machine_count> <order_json_file>
 
 example:
 ```bash
+python ./main.py --help
+
 python ./main.py 1 ./order.json
 ```
