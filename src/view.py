@@ -1,7 +1,7 @@
 from collections import Counter
-from orders import is_successful_order
-from entities.Beverage import UNALLOCATED
-from config import config
+from src.orders import is_successful_order
+from src.entities.Beverage import UNALLOCATED
+from src.config import config
 
 
 def get_beverage_name(item):

@@ -7,7 +7,7 @@ from schematics.types import (
     DictType,
     ModelType,
     BooleanType)
-from entities.Beverage import Beverage
+from src.entities.Beverage import Beverage
 
 
 class OrderItem(Model):

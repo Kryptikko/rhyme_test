@@ -1,7 +1,7 @@
 import uuid
 from collections import Counter
-from entities.Order import Order
-from entities.Beverage import Beverage, UNALLOCATED
+from src.entities.Order import Order
+from src.entities.Beverage import Beverage, UNALLOCATED
 
 
 def init_orders(orders, beverage_spec={}):

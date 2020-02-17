@@ -1,10 +1,10 @@
 import argparse
 import json
 import sys
-from config import config
-from coffee_machines import init_machines, allocate_order
-from orders import init_orders
-from view import print_orders_summary, print_machine_summary, print_top_orders_summary
+from src.config import config
+from src.coffee_machines import init_machines, allocate_order
+from src.orders import init_orders
+from src.view import print_orders_summary, print_machine_summary, print_top_orders_summary
 
 parser = argparse.ArgumentParser(description='Coffee Shop')
 

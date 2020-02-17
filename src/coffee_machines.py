@@ -1,5 +1,5 @@
-from entities.CoffeeMachine import CoffeeMachine
-from entities.Beverage import UNALLOCATED
+from src.entities.CoffeeMachine import CoffeeMachine
+from src.entities.Beverage import UNALLOCATED
 
 RESOURCES = ['water', 'coffee', 'milk']
 

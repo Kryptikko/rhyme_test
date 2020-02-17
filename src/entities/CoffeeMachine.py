@@ -1,6 +1,6 @@
 from schematics.models import Model
 from schematics.types import IntType, StringType
-from entities.Beverage import Beverage
+from src.entities.Beverage import Beverage
 
 
 class CoffeeMachine(Model):
