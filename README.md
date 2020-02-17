@@ -1,6 +1,8 @@
 requires python 2.7
 source env/bin/active
 pip install -r requirments.txt
+python3 -m venv ./env
+
 
 Coffee shop
 At the Rhyme team, we enjoy our coffee, except Sergey... Sergey prefers tea. Ivo almost always gets Ristretto single or double shot, Ned’s preferences range between Espresso to Lungo with milk. Nadya sometimes gets just a cup of milk.

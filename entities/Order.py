@@ -1,17 +1,19 @@
 from schematics.models import Model
 from schematics.types import (
     IntType,
+    UUIDType,
     StringType,
     ListType,
+    DictType,
     ModelType,
     BooleanType)
 from entities.Beverage import Beverage
 
 
 class OrderItem(Model):
+    id = StringType()
     item = StringType(required=True)
     add = ListType(StringType)
-    beverage = ModelType(Beverage)
 
     def __repr__(self):
         return "<OrderItem(item='%s')>" % (self.item)
@@ -20,6 +22,10 @@ class OrderItem(Model):
 class Order(Model):
     order = IntType(required=True)
     items = ListType(ModelType(OrderItem), default=[])
+    beverages = DictType(
+            ModelType(Beverage),
+            default=lambda: {},
+            serialize_when_none=True,)
 
     def __repr__(self):
         return "<Order(order='%s')>" % (self.order)
