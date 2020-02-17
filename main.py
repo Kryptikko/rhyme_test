@@ -21,7 +21,6 @@ args = parser.parse_args()
 with open(args.order) as order_file:
     order_json = json.load(order_file)
 
-# TODO: handle validation
 orders = init_orders(order_json,
     config['beverage_spec'])
 

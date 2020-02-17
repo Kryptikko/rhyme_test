@@ -32,6 +32,8 @@ def _compose_order_item_to_beverage(item, bev_spec):
     # add the beverage addons
     normalize_items += item.add
     for order_item in normalize_items:
+        if order_item not in bev_spec:
+            raise Exception("Unsapported beverage: `%s`" % order_item)
         beverage_spec.append(bev_spec[order_item])
 
     composite = sum(

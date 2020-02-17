@@ -1,6 +1,9 @@
 from entities.CoffeeMachine import CoffeeMachine
 from entities.Beverage import UNALLOCATED
 
+RESOURCES = ['water', 'coffee', 'milk']
+
+
 def init_machines(count, machine_spec):
     machines = []
     for i in range(count):
@@ -10,18 +13,18 @@ def init_machines(count, machine_spec):
         machines.append(machine)
     return machines
 
+
 def _allocate_to_machine(beverage, machine):
     temp_machine_state = CoffeeMachine(machine)
-    resources = ['water', 'coffee', 'milk']
-    for resource in resources:
+    for resource in RESOURCES:
         remaining = machine[resource] - beverage[resource]
         temp_machine_state[resource] = remaining
 
     return temp_machine_state
 
+
 def _machine_has_enough_resources(machine, beverage):
-    resources = ['water', 'coffee', 'milk']
-    for resource in resources:
+    for resource in RESOURCES:
         remaining = machine[resource] - beverage[resource]
         if remaining < 0:
             return False
